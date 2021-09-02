@@ -5,6 +5,8 @@
         if (!prevOsTheme || prevOsTheme !== osTheme) {
             localStorage.setItem('os-theme', osTheme);
             localStorage.setItem('theme', osTheme);
+            document.getElementById('root').className = 'theme__' + osTheme;
+            location.reload();
         }
     }
 })();
