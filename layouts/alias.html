@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8" />
+  <noscript><meta http-equiv="refresh" content="0; url={{ .Permalink }}" /></noscript>
+  <script>
+  {{- /* assume that alias targeting lang specific index pages is the "index" page */}}
+  {{- $tmp := slice }}
+  {{- $langs := slice }}
+  {{- range site.Languages }}
+    {{- $str := printf "%s%s%s" "/" .Lang "/" }}
+    {{- $tmp = $tmp | append $str }}
+    {{- $langs = $langs | append .Lang }}
+  {{- end }}
+  {{- $url := urls.Parse .Permalink }}
+  {{- if in $tmp $url.Path }}
+    var langs = JSON.parse({{ jsonify $langs }});
+    var getFirstBrowserLanguage = function () {
+      var nav = window.navigator,
+      browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+      i,
+      language;
+      // support for HTML 5.1 "navigator.languages"
+      if (Array.isArray(nav.languages)) {
+        for (i = 0; i < nav.languages.length; i++) {
+          language = nav.languages[i];
+          if (language && language.length) {
+            return language;
+          }
+        }
+      }
+      // support for other well known properties in browsers
+      for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+        language = nav[browserLanguagePropertyKeys[i]];
+        if (language && language.length) {
+          return language;
+        }
+      }
+      return null;
+    };
+
+    if (location.search) location.href = "/room/" + location.search;
+    else {
+      var langFull = getFirstBrowserLanguage().toLowerCase();
+      var lang = langFull.substr(0, langFull.indexOf("-"));
+      var targetLang = {{ substr $url.Path 1 -1 }};
+      if (langs.includes(langFull)) targetLang = langFull;
+      else if (langs.includes(lang)) targetLang = lang;
+      location.href = "/" + targetLang + "/" + (window.location.hash || '');
+    }
+  {{- else }}
+    location.href = {{ .Permalink }} + (window.location.search || '') + (window.location.hash || '');
+  {{- end }}
+  </script>
+</head>
+
+</html>

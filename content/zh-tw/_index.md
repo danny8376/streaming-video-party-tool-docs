@@ -1,5 +1,10 @@
+---
+title: "同步視聽小工具"
+draft: false
+---
+
 同步視聽小工具
-========
+----
 
 提供同步視聽實況用的小工具，主要有兩個功能：
 1. 提供一個能讓OBS擷取的影片撥放進度小視窗。
@@ -13,3 +18,4 @@
 * [Chrome](https://chrome.google.com/webstore/detail/streaming-video-party-too/ejjcgcillnknldlnjomjockdceikloja)
 
 或者也可以直接下載 [最新安裝檔](https://github.com/danny8376/streaming-video-party-tool/releases/latest) 安裝。
+

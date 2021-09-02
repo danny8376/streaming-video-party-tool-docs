@@ -1,0 +1,5 @@
+[[main]]
+  identifier = "manual"
+  name = "Manual"
+  url = "manual"
+  weight = 1

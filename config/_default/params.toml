@@ -1,0 +1,40 @@
+logo = true
+logoText = "Streaming Video Party Tool"
+logoType = "short" # long, short
+description = "The Zzo theme documentation site."
+editBaseURL = "https://github.com/danny8376/streaming-video-party-tool-site/blob/master/content"
+themeOptions = ["light", "dark"]
+
+custom_js = ["js/auto_first_visit_theme.js"]
+
+useFaviconGenerator = true # https://www.favicon-generator.org/
+
+wideViewAsDefault = true
+
+enableWideBlogSwitch = true
+enableTocSwitch = true
+enableLandingBackground = true
+enableSearch = true
+enableSearchHighlight = true
+enableLangChange = true
+enableDarkMode = true
+enableBreadcrumb = true
+enableBlogBreadcrumb = true
+enableEditBtn = true
+enableToc = true
+enableMenu = true
+enableNavbar = true
+enableFooter = true
+showPoweredBy = true
+
+paginateWindow = 1
+taxoPaginate = 13
+taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+
+github = "https://github.com/danny8376/streaming-video-party-tool-site"
+
+enableComment = false
+[utterances]       # https://utteranc.es/
+  owner = "zzossig"              # Your GitHub ID
+  repo = "zzoDocs"               # The repo to store comments
+
