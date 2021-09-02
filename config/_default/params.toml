@@ -1,7 +1,7 @@
 logo = true
 logoText = "Streaming Video Party Tool"
 logoType = "short" # long, short
-description = "The Zzo theme documentation site."
+description = "A simple tool to help holding video part mainly for streaming"
 editBaseURL = "https://github.com/danny8376/streaming-video-party-tool-site/blob/master/content"
 themeOptions = ["light", "dark"]
 
