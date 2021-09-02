@@ -1,5 +1,6 @@
 ---
 title: "同步視聽小工具"
+description: 提供同步視聽實況用的小工具
 draft: false
 ---
 

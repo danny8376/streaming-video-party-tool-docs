@@ -1,5 +1,6 @@
 ---
 title: "Streaming Video Party Tool"
+description: A simple tool to help holding video part mainly for streaming
 draft: false
 ---
 
