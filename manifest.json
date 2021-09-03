@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Hugo Zdoc theme",
-  "short_name": "Hugo Zdoc theme",
+  "name": "Streaming Video Party Tool Site",
+  "short_name": "Video Party Site",
   "version": "1.0.0",
   "default_locale": "en",
-  "description": "Hugo simple documentation theme",
-  "start_url": "https://themes.gohugo.io/theme/hugo-theme-zdoc/",
+  "description": "A simple tool to help holding video part mainly for streaming.",
+  "start_url": "https://video-party.saru.moe/",
   "icons": [
     {
       "src": "favicon/android-icon-36x36.png",
@@ -40,12 +40,6 @@
     {
       "src": "favicon/android-icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "density": "4.0"
-    },
-    {
-      "src": "favicon/android-icon-512x512.png",
-      "sizes": "512x512",
       "type": "image/png",
       "density": "4.0"
     }
