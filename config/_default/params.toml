@@ -6,6 +6,7 @@ editBaseURL = "https://github.com/danny8376/streaming-video-party-tool-site/blob
 themeOptions = ["light", "dark"]
 
 custom_js = ["js/auto_first_visit_theme.js"]
+custom_css = ["css/custom_tweek.css"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/
 
@@ -31,7 +32,7 @@ paginateWindow = 1
 taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
-github = "https://github.com/danny8376/streaming-video-party-tool-site"
+github = "https://github.com/danny8376/streaming-video-party-tool"
 
 enableComment = false
 [utterances]       # https://utteranc.es/
