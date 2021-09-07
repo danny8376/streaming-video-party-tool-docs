@@ -16,7 +16,8 @@ draft: false
 以下瀏覽器有上傳至官方商店，可以直接安裝：
 
 * [Firefox](https://addons.mozilla.org/zh-TW/firefox/addon/streaming-video-party-tool/)
-* [Chrome](https://chrome.google.com/webstore/detail/streaming-video-party-too/ejjcgcillnknldlnjomjockdceikloja)
+* [Chrome](https://chrome.google.com/webstore/detail/ejjcgcillnknldlnjomjockdceikloja)
+* [Edge](https://microsoftedge.microsoft.com/addons/detail/jniglidohojdgfdghnfoodbcbmapdfhh)
 
 或者也可以直接下載 [最新安裝檔](https://github.com/danny8376/streaming-video-party-tool/releases/latest) 安裝。
 
